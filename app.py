@@ -7,7 +7,7 @@ import pandas as pd
 import streamlit as st
 
 DB_PATH = "leads.db"
-ADMIN_PASSWORD = os.environ.get("ADMIN_PASSWORD", "changeme")
+ADMIN_PASSWORD = os.environ.get("MORBIS", "changeme")
 
 def get_conn():
     conn = sqlite3.connect(DB_PATH, check_same_thread=False)
